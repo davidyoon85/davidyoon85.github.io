@@ -1,170 +1,462 @@
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>David Yoon</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Sunshine - Responsive vCard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Sunshine - Responsive vCard Template" />
+    <meta name="keywords" content="vcard, resposnive, retina, resume, jquery, css3, bootstrap, Sunshine, portfolio" />
+    <meta name="author" content="lmtheme" />
+    <link rel="shortcut icon" href="favicon.png">
 
-		<!-- Header -->
-			<div id="header">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/transition-animations.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 
-				<div class="top">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
 
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-							<h1 id="title">David Yoon</h1>
-							<p>Software Engineer</p>
-						</div>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  </head>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon fa-home">Intro</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
+  <body>
+    <!-- Loading animation -->
+    <div class="preloader">
+      <div class="preloader-animation">
+        <div class="dot1"></div>
+        <div class="dot2"></div>
+      </div>
+    </div>
+    <!-- /Loading animation -->
 
-				</div>
+    <div id="page" class="page">
+      <!-- Header -->
+      <header id="site_header" class="header mobile-menu-hide">
+        <div class="my-photo">
+          <img src="images/profile.jpeg" alt="image">
+          <div class="mask"></div>
+        </div>
 
-				<div class="bottom">
+        <div class="site-title-block">
+          <h1 class="site-title">David Yoon</h1>
+          <p class="site-description">Web Developer</p>
+        </div>
 
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://github.com/davidyoon85" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="https://www.linkedin.com/in/davidyoon85" class="fa fa-linkedin"><span class="label"></span></a></li>
-							<li><a href="mailto: davidyoon85@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
+        <!-- Navigation & Social buttons -->
+        <div class="site-nav">
+          <!-- Main menu -->
+          <ul id="nav" class="site-main-menu">
+            <!-- About Me Subpage link -->
+            <li>
+              <a class="pt-trigger" href="#home" data-animation="58" data-goto="1">Home</a><!-- href value = data-id without # of .pt-page. Data-goto is the number of section -->
+            </li>
+            <!-- /About Me Subpage link -->
+            <!-- About Me Subpage link -->
+            <li>
+              <a class="pt-trigger" href="#about_me" data-animation="59" data-goto="2">About me</a>
+            </li>
+            <!-- /About Me Subpage link -->
+            <li>
+              <a class="pt-trigger" href="#resume" data-animation="60" data-goto="3">Resume</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#portfolio" data-animation="61" data-goto="4">Portfolio</a>
+            </li>
+            <li>
+              <a class="pt-trigger" href="#contact" data-animation="59" data-goto="5">Contact</a>
+            </li>
+          </ul>
+          <!-- /Main menu -->
 
-				</div>
+          <!-- Social buttons -->
+          <ul class="social-links">
+            <li><a class="tip social-button" href="https://www.linkedin.com/in/davidyoon85/" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li> <!-- Full list of social icons: http://fontawesome.io/icons/#brand -->
+            <li><a class="tip social-button" href="https://github.com/davidyoon85" title="Github"><i class="fab fa-github-alt"></i></a></li>
+            <li><a class="tip social-button" href="https://angel.co/david-yoon-13" title="AngelList"><i class="fab fa-angellist"></i></a></li>
+          </ul>
+          <!-- /Social buttons -->
+        </div>
+        <!-- Navigation & Social buttons -->
+      </header>
+      <!-- /Header -->
 
-			</div>
+      <!-- Mobile Header -->
+      <div class="mobile-header mobile-visible">
+        <div class="mobile-logo-container">
+          <div class="mobile-site-title">David Yoon</div>
+        </div>
 
-		<!-- Main -->
-			<div id="main">
+        <a class="menu-toggle mobile-visible">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- /Mobile Header -->
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
+      <!-- Main Content -->
+      <div id="main" class="site-main">
+        <!-- Page changer wrapper -->
+        <div class="pt-wrapper">
+          <!-- Subpages -->
+          <div class="subpages">
 
-							<header>
-								<h2 class="alt">David Yoon<br />
-								Software Engineer</h2>
-								<!-- <a href="assets/document/david_yoon_resume.pdf">View my Resume</a> -->
-								<a href="assets/document/david_yoon_resume.pdf" download="david_yoon_resume">
-									<button>View My Resume</button></a>
-								<p>New York, New York<br /></p>
+            <!-- Home Subpage -->
+            <section class="pt-page pt-page-1 section-with-bg section-paddings-0" style="background-image: url(images/city.jpg);" data-id="home">
+              <div class="home-page-block-bg">
+                <div class="mask"></div>
+              </div>
+              <div class="home-page-block">
+                <div class="v-align">
+                  <h2>David Yoon</h2>
+                  <div id="rotate" class="text-rotate">
+                    <div>
+                      <p class="home-page-description">Web Developer</p>
+                    </div>
+                    <div>
+                      <p class="home-page-description">Fullstack-developer</p>
+                    </div>
+                  </div>
 
-							</header>
+                  <div class="block end" style="text-align: center">
+                    <ul class="info-list">
+                      <li><span class="title">Age</span><span class="value">33</span></li>
+                      <li><span class="title">Address</span><span class="value">Queens, NY</span></li>
+                      <li><span class="title">e-mail</span><span class="value"><a href="mailto:davidyoon85@gmail.com">davidyoon85@gmail.com</a></span></li>
+                      <li><span class="title">Phone</span><span class="value">(917) 444 6185</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End of Home Subpage -->
 
-							<footer>
-								<a href="#portfolio" class="button scrolly">Portfolio</a>
-							</footer>
+            <!-- About Me Subpage -->
+            <section class="pt-page pt-page-2" data-id="about_me">
+              <div class="section-title-block">
+                <h2 class="section-title">About Me</h2>
+              </div>
 
-						</div>
-					</section>
+              <div class="row">
+                <div class="col-sm-6 col-md-6 subpage-block">
+                  <div class="general-info">
+                    <h3>I am a Web Developer</h3>
+                    <p>I'm David, an experienced Human Resource manager turned passionate software engineer, who has experience building dynamic web applications. I am knowledgeable in React.js, Redux, Ruby on Rails and JavaScript.</p>
+                    <p>Over the years, while working with smart technology in the education industry, i've witnessed the impact that technology is having on the world around us. This appreciation and my innate affinity for problem-solving have led me to pursue web development.</p>
+                  </div>
+                </div>
+              </div>
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
+              <!-- Fun facts block -->
+              <div class="block-title">
+                <h3>Fun Facts</h3>
+              </div>
 
-							<header>
-								<h2>Portfolio</h2>
-							</header>
+              <div class="row">
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="fun-fact-block gray-bg"> 
+                    <i class="pe-7s-icon pe-7s-plane"></i>
+                    <h4>Years Overseas</h4>
+                    <span class="fun-value">9</span>
+                  </div>
+                </div>
 
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://camp-away.herokuapp.com/#/" class="image fit"><img src="images/camp_icon.png" alt="CampAway" /></a>
-										<header>
-											<h3>CampAway</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://davidyoon85.github.io/Toggle/" class="image fit"><img src="images/toggle.png" alt="Toggle" /></a>
-										<header>
-											<h3>Toggle</h3>
-										</header>
-									</article>
-									
-								</div>
-							</div>
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="fun-fact-block gray-bg"> 
+                    <i class="pe-7s-icon pe-7s-joy"></i>
+                    <h4>Games Mastered</h4>
+                    <span class="fun-value">4</span>
+                  </div>
+                </div>
 
-						</div>
-					</section>
+                <div class="col-sm-6 col-md-3 subpage-block">
+                  <div class="fun-fact-block"> 
+                    <i class="pe-7s-icon pe-7s-coffee"></i>
+                    <h4>Coffee Consumed</h4>
+                    <span class="fun-value">16,428</span>
+                  </div>
+                </div>
+              </div>
+              <!-- End of Fun fucts block -->
+            </section>
+            <!-- End of About Me Subpage -->
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+            <!-- Resume Subpage -->
+            <section class="pt-page pt-page-3" data-id="resume">
+              <div class="section-title-block">
+                <h2 class="section-title">Resume</h2>
+              </div>
 
-							<header>
-								<h2>About Me</h2>
-							</header>
+              <div class="row">
+                <div class="col-sm-6 col-md-4 subpage-block">
+                  <div class="block-title">
+                    <h3>Education</h3>
+                  </div>
+                  <div class="timeline">
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2019</h5>
+                      <h4 class="event-name">Web Development</h4>
+                      <span class="event-description">App Academy</span>
+                      <p>Completed rigorous 1000-hour full-stack web development course with &#60;3% acceptance rate.</p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">2009</h5>
+                      <h4 class="event-name">Finance and Investments</h4>
+                      <span class="event-description">Baruch College</span>
+                      <!-- <p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p> -->
+                    </div>
+                  </div>
+                </div>
 
-							<p>My name is David. I am a software engineer from New York City. I was born and raised here, but I spent the last 10 years abroad in 
-								South Korea. I was working previously as a Human Resources Manager for an education company. I loved my experience there, and will
-								take them with me wherever I go. 
-							</p>
+                <div class="col-sm-6 col-md-4 subpage-block">
+                  <div class="block-title">
+                    <h3>Experience</h3>
+                  </div>
+                  <div class="timeline">
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">August 2016 - November 2018</h5>
+                      <h4 class="event-name">Training Manager</h4>
+                      <span class="event-description">Chungdahm Learning</span>
+                      <p>
+                        Headed training center operations; managed 18 trainers and oversaw the onboarding of 100+ teachers every
+                        quarter.
+                      </p>
+                    </div>
+                    <!-- Single event -->
+                    <div class="timeline-event te-primary">
+                      <h5 class="event-date">February 2014 - August 2016</h5>
+                      <h4 class="event-name">Faculty Manager</h4>
+                      <span class="event-description">Chungdahm Learning</span>
+                      <p>Led the assessment and development of 23 teachers and 3 head instructors, at a branch with over 1000 students.</p>
+                    </div>
+                  </div>
+                </div>
 
-						</div>
-					</section>
+                <div class="col-sm-6 col-md-4 subpage-block">
+              
+                  <div class="block-title">
+                    <h3>Coding Skills</h3>
+                  </div>
+                  <div class="skills-info">
+                    <h4>React</h4>                               
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-4"></div>
+                    </div>
 
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
+                    <h4>Redux</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-5"></div>
+                    </div>
 
-							<header>
-								<h2>Contact</h2>
-							</header>
+                    <h4>JavaScript</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-5"></div>
+                    </div>
 
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
+                    <h4>Postgres SQL</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-6"></div>
+                    </div>
 
-						</div>
-					</section>
+                    <h4>jQuery</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-6"></div>
+                    </div>
 
-			</div>
+                    <h4>Ruby</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-4"></div>
+                    </div>
 
-		<!-- Footer -->
-			<div id="footer">
+                    <h4>Ruby on Rails</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-6"></div>
+                    </div>
 
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+                    <h4>HTML5</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-4"></div>
+                    </div>
 
-			</div>
+                    <h4>CSS</h4>
+                    <div class="skill-container">
+                      <div class="skill-percentage skill-5"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12 col-md-12">
+                  <div class="download-cv-block">
+                    <a class="button" href="files/david_yoon_resume.pdf" download>Download Resume</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- End Resume Subpage -->
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
-	</body>
+            <!-- Portfolio Subpage -->
+            <section class="pt-page pt-page-4" data-id="portfolio">
+              <div class="section-title-block">
+                <h2 class="section-title">Portfolio</h2>
+                <!-- <h5 class="section-description">My Best Works</h5> -->
+              </div>
+
+              <!-- Portfolio Content -->
+              <div class="portfolio-content">
+
+                <!-- Portfolio Grid -->
+                <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3">
+
+                  <!-- Portfolio Item 1 -->
+                  <figure class="item">
+                    <a href="https://camp-away.herokuapp.com/#/" title="CampAway">
+                      <img src="images/portfolio/campaway.png" alt="CampAway">
+                      <div>
+                        <h5 class="name">CampAway</h5>
+                        <!-- <small>Media</small> -->
+                        <!-- <i class="fa fa-image"></i> -->
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 1 -->
+
+                  <!-- Portfolio Item 2 -->
+                  <figure class="item">
+                    <a href="https://davidyoon85.github.io/Toggle" title="Toggle">
+                      <img src="images/portfolio/toggle.png" alt="Toggle">
+                      <div>
+                        <h5 class="name">Toggle</h5>
+                        <!-- <small>Media</small> -->
+                        <!-- <i class="fa fa-image"></i> -->
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 2 -->
+             
+                </div>
+                <!-- /Portfolio Grid -->
+
+              </div>
+              <!-- /Portfolio Content -->
+
+            </section>
+            <!-- /Portfolio Subpage -->
+
+            <!-- Contact Subpage -->
+            <section class="pt-page pt-page-6" data-id="contact">
+              <div class="section-title-block">
+                <h2 class="section-title">Contact</h2>
+                <h5 class="section-description">Get in Touch</h5>
+              </div>
+
+              <div class="row">
+                <div class="col-sm-6 col-md-6 subpage-block">
+                  <div class="block-title">
+                    <h3>Get in Touch</h3>
+                  </div>
+                  <p>
+                    I would love to hear from you! So, feel free to reach out with any opportunities or any questions about my work.
+                  </p>
+                  <div class="contact-info-block">
+                    <div class="ci-icon">
+                      <i class="pe-7s-icon pe-7s-map-marker"></i>
+                    </div>
+                    <div class="ci-text">
+                      <h5>New York, USA</h5>
+                    </div>
+                  </div>
+                  <div class="contact-info-block">
+                    <div class="ci-icon">
+                      <i class="pe-7s-icon pe-7s-mail"></i>
+                    </div>
+                    <div class="ci-text">
+                      <h5>davidyoon85@gmail.com</h5>
+                    </div>
+                  </div>
+                  <div class="contact-info-block">
+                    <div class="ci-icon">
+                      <i class="pe-7s-icon pe-7s-call"></i>
+                    </div>
+                    <div class="ci-text">
+                      <h5>(917) 444 6185</h5>
+                    </div>
+                  </div>
+                  <!-- <div class="contact-info-block">
+                    <div class="ci-icon">
+                      <i class="pe-7s-icon pe-7s-check"></i>
+                    </div>
+                    <div class="ci-text">
+                      <h5>Freelance Available</h5>
+                    </div>
+                  </div> -->
+                </div>
+
+                <div class="col-sm-6 col-md-6 subpage-block">
+                  <div class="block-title">
+                    <h3>Contact Form</h3>
+                  </div>
+                  <form id="contact-form" method="post" action="contact_form/contact_form.php">
+
+                    <div class="messages"></div>
+
+                    <div class="controls">
+                      <div class="form-group">
+                          <input id="form_name" type="text" name="name" class="form-control" placeholder="Full Name" required="required" data-error="Name is required.">
+                          <div class="form-control-border"></div>
+                          <i class="form-control-icon fa fa-user"></i>
+                          <div class="help-block with-errors"></div>
+                      </div>
+
+                      <div class="form-group">
+                          <input id="form_email" type="email" name="email" class="form-control" placeholder="Email Address" required="required" data-error="Valid email is required.">
+                          <div class="form-control-border"></div>
+                          <i class="form-control-icon fa fa-envelope"></i>
+                          <div class="help-block with-errors"></div>
+                      </div>
+
+                      <div class="form-group">
+                          <textarea id="form_message" name="message" class="form-control" placeholder="Message for me" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                          <div class="form-control-border"></div>
+                          <i class="form-control-icon fa fa-comment"></i>
+                          <div class="help-block with-errors"></div>
+                      </div>
+
+                      <div class="g-recaptcha" data-sitekey="6LffUqMUAAAAAF1uDh7Fs0uoZp2kWSaxUsX8rmYd" data-callback="correctCaptcha"></div>
+
+                      <input type="submit" class="button btn-send" value="Send message">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </section>
+            <!-- End Contact Subpage -->
+
+          </div>
+        </div>
+        <!-- /Page changer wrapper -->
+      </div>
+      <!-- /Main Content -->
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/page-transition.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/jquery.shuffle.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
+    <script src="js/main.js"></script>
+
+  </body>
 </html>
